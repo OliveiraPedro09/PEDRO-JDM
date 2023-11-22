@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}
+Importações
+{% endblock %}
+
+{% block css %}
+rel="stylesheet" href="{{ url_for('static', filename='stylesheets.css')}}"
+{% endblock %}
+
+{% block content %}
+<main> 
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='imagens/r34.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nissan Skyline R34 GTR V Spec II</h5>
+          <p class="card-text">O Skyline GT-R R34 é uma versão esportiva de grande prestígio do Nissan Skyline. A versão GT-R possui o motor Nissan RB26DETT, de 6 cilindros em linha com biturbo. </p>
+          <a href="/cadastro" class="btn btn-primary">Consultar Preço</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='imagens/rx7.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mazda RX-7</h5>
+          <p class="card-text">O Mazda RX-7 é um automóvel desportivo produzido pela empresa japonesa Mazda entre 1978 e 2002. Possui tração traseira e motor de até 280 cavalos de potência.</p>
+          <a href="/cadastro" class="btn btn-primary">Consultar Preço</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='imagens/rx8.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mazda RX-8</h5>
+          <p class="card-text">O Mazda RX-8 é um automóvel esportivo compacto da marca japonesa Mazda que foi fabricado desde 2003 até 2012. Em sua versão com câmbio manual é capaz de gerar 232 cavalos de potência a 8250 rpm.</p>
+          <a href="/cadastro" class="btn btn-primary">Consultar Preço</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='imagens/s15.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nissan Silvia s15</h5>
+          <p class="card-text">O Nissan Silvia s15 é um automóvel esportivo produzido pela empresa japonesa Nissan. Possui tração traseira e motor de até 230 cavalos de potência.</p>
+          <a href="/cadastro" class="btn btn-primary">Consultar Preço</a>
+        </div>
+      </div>
+</div>
+<div class="orc">
+  <h1>Deseja fazer um novo orçamento ?</h1>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Oque você deseja ?</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <input class="btn btn-primary" type="reset" value="Reset">
+  </div>
+  <br>
+  
+  
+</div>
+<h1 class="text">Um showcase de um dos nossos carros !</h1>
+<div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fU64X30dqzc?si=-GG_RZSFQmjKjVjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+</main>
+
+{% endblock %}

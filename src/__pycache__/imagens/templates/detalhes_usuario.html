@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+Perfil
+{% endblock %}
+
+{% block content %}
+<div class="cadastro">
+    <h1>Detalhes do Usuário</h1>
+    </div>
+    <div class="cadastro">
+    <p>NOME: {{ user.nome }}</p>
+    </div>
+    <div class="cadastro">
+    <p>EMAIL: {{ user.email }}</p>
+    </div>
+    <form method="post" action="/logout"><button type="submit">Sair</button></form>
+    
+    
+    
+    
+    
+{% endblock %}

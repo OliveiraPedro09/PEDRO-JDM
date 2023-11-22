@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS jdm;
+USE jdm;
+
+CREATE TABLE IF NOT EXISTS usuario(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+); 
+
+select * from usuario

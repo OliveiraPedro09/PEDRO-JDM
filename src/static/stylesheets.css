@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1%;
+    max-width: 800px;
+}
+
+.card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.orc{
+    display: block;
+    justify-content: center;
+    margin: 7%;
+    padding: 1%;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+
+}
+
+.text{
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
